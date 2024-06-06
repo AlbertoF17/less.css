@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="less-reset.css" />
+    <link rel="stylesheet" href="less.css" />
+    <base href="index.html">
+    <title>Less.Css</title>
+  </head>
+  <body>
+    
+    <article>
+      <h3>Articulo 1</h3>
+    </article>
+    <aside>
+      <h3>Esto es un aside</h3>
+    </aside>
+    <audio>
+
+    </audio>
+  
+    <br />
+    <button>Esto es un boton</button>
+    <button disabled>Esto es un boton deshabilitado</button>
+    <canvas id="miCanvas">
+      
+    </canvas>
+
+    <script>
+
+      const canvas = document.getElementById('miCanvas');
+      const ctx = canvas.getContext('2d');
+      
+      // Dibujar un círculo
+      ctx.beginPath();
+      ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+      ctx.fillStyle = "#f00";
+      ctx.fill();
+      
+      </script>
+    
+
+    
+    <dl>
+      <dd>Html</dd>
+      <dt>Lenguaje de marcas</dt>
+    </dl>
+    
+    <embed src="https://www.google.com/maps/embed?v=1&zoom=1"/>
+    <figure>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkvmivFg5uFFZuCXqlkYFNsmvbOVGcXtpPhrXOY6jrQ&s" alt="Descripción de la imagen" />
+      <figcaption>Titulo imagen</figcaption>
+    </figure>
+    <footer>
+      Este es el footer
+    </footer>
+    <form id="myform">
+      <fieldset>
+        <legend>Información Personal</legend>
+        <label for="iname">Name</label>
+        <input id="iname" name="username" type="text"/>
+        <label for="browser">Navegador</label>
+        <input id="browser" name="brow" list="browsers" type="text">
+        <datalist id="browsers" style='margin:100px; width: 100px; height: 100px;'>
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+        </datalist>
+        <input type="button" value="Boton">
+      </fieldset>
+      <fieldset>
+        <legend>Selector</legend>
+        <select>
+          <optgroup label="Andalucia">
+            <option value="sevilla">Sevilla</option>
+            <option value="cadiz">Cadiz</option>
+          </optgroup>
+          <optgroup label="Valenciana">
+            <option value="valencia">Valencia</option>
+            <option value="alacant">Alicante</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Output</legend>
+        <input type="number" id="b" value="50" /> +
+        <input type="number" id="a" value="10" /> =
+        <output for="a b">60</output>
+      </fieldset>
+      <fieldset>
+        <legend>Buscador</legend>
+        <search for="myform">
+          <input type="search" id="query" />
+        </search>
+      </fieldset>
+    </form>
+    <header>Este es el header</header>
+    <hr />
+    
+    <iframe src="https://www.youtube.com/embed/TKPIw4uZbA8?si=sAVqVsPr9b2I-OiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkvmivFg5uFFZuCXqlkYFNsmvbOVGcXtpPhrXOY6jrQ&s" alt="Descripción de la imagen" />
+    
+    
+    <main>Main content</main>
+    <map><area /></map>
+    
+    
+    <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50"></meter>
+    <nav>
+      <menu>
+        <li><a href="#">Esto</a></li>
+        <li><a href="#">es</a></li>
+        <li><a href="#">un</a></li>
+        <li><a href="#">nav</a></li>
+      </menu>
+    </nav>
+    <noscript>Esto se mostrará si no hay js</noscript>
+    <object type="application/pdf" data="https://pdfobject.com/pdf/sample.pdf"></object>
+    <ol>
+      <li>ejemplo</li>
+      <li>lista</li>
+      <li>ordenada</li>
+    </ol>
+   
+    <picture>
+      <source
+          sizes="1920w, 1280w, 640w"
+          srcset="public/imagen.avif 1920w,
+                  public/imagen-1000.avif 1280w,
+                  public/imagen-700.avif 640w"
+          type="image/avif"
+      >
+      <source
+          sizes="1920w, 1280w, 640w"
+          srcset="public/imagen.webp 1920w,
+                  public/imagen-1000.webp 1280w,
+                  public/imagen-700.webp 640w"
+          type="image/webp"
+      >
+      <source
+          sizes="1920w, 1280w, 640w"
+          srcset="public/imagen.jpg 1920w,
+                  public/imagen-1000.jpg 1280w,
+                  public/imagen-700.jpg 640w"
+          type="image/jpeg"
+      >
+      <img loading="lazy" src="public/imagen.jpg" alt="imagen">
+    </picture>
+    <progress max="100" value="70"></progress>
+    
+
+    
+    <section>Esto es una seccion</section>
+    
+
+    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+      <circle cx="50" cy="50" r="40" fill="#f00" stroke="#000" stroke-width="5"/>
+    
+      <text x="50" y="60" text-anchor="middle" font-size="20" fill="#fff">Porcentaje</text>
+    
+    </svg>
+    <table>
+      <caption>Titulo tabla</caption>
+      <colgroup>
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>ejemplo header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ejemplo body</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>ejemplo foot</td>
+        </tr>
+      </tfoot>
+    </table>
+    <template>
+      <p>Esto es un template</p>
+      <slot name="description">Su descripcion</slot>
+    </template>
+    <textarea placeholder="Aqui va mucho texto..."></textarea>
+
+    <ul>
+      <li>Lista</li>
+      <li>no</li>
+      <li>ordenada</li>
+    </ul>
+    
+    <video>
+      <source />
+      <track /> <!--subtitulos-->
+    </video>
+
+    <!--
+    <header>
+      <h1>Esto es un titulo en un header</h1>
+    </header>
+    <header>
+      <h1>Esto es un titulo en un header</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header>
+      <h1>Esto es un titulo en un header</h1>
+      <h2>Esto es un subtitulo en un header</h2>
+    </header>
+    <header>
+      <h1>Esto es un titulo en un header</h1>
+      <h2>Esto es un subtitulo en un header</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <aside>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <aside>
+
+    </aside>
+    <main>
+      <article>
+        <time datetime="2022-11-06">November 06, 2022</time>
+        <h3>
+            <a href="#" title="link to this post">Exam day</a>
+        </h3>
+        <div class="content">
+            <p>Content goes here...</p>
+        </div>
+        <section class="comments">
+            <p><a href="#">3 comments</a></p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>§</p>
+      <p>© 2022–11 <a href="#">Joaquín Borrego</a></p>
+    </footer>
+    -->
+  </body>
+</html>

@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    /* Include padding and border in box's size calculation*/
+    box-sizing: border-box;
+}
+
+* {
+    /* Prevent grid and flex problems  */
+    min-width: 0;
+}
+
+body {
+    /* Make the body the same height as your viewport*/
+    min-height: 100dvh;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
