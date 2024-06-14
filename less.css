@@ -28,6 +28,11 @@
 
 body {
   background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.5rem;
 }
 
 h1,
@@ -46,7 +51,15 @@ li, dt, dd, label,
 legend, input, output, p,
 fieldset, select,
 article, aside, th, td,
-legend, nav li a {
+legend, nav li a, bdi,
+bdo, code, data, dialog,
+ins, kbd, math, mrow,
+munderover, mo, mi, mn,
+msup, mfrac, pre, ruby, samp,
+small, sub, sup, rp, rt, time, var,
+h1, h2, h3, h4, h5, h6, abbr, address,
+b, blockquote, cite, del, details, em,
+i, mark, q, s, span, strong, u {
   color: #000;
 }
 
@@ -107,6 +120,7 @@ footer {
   color: #fff;
   padding: 1em;
   text-align: center;
+  width: 100%;
 }
 
 object {
@@ -121,17 +135,18 @@ article {
   background-color: #fff;
   padding: 1em;
   border: 1px solid #ddd;
+  width: 100%;
 }
 
 aside {
   position: fixed;
   top:0;
   left: 0;
-  width: 15vw;
+  width: 15%;
   height: 100%;
   margin: 0;
   background-color: #eee;
-  padding: 1rem;
+  padding-left: 1rem;
 }
 
 article:has(h1) h1, 
@@ -141,8 +156,9 @@ article:has(h3) h3 {
 }
 
 body:has(> aside) {
-  margin-left: 15vw;
-  width: 85vw;
+  margin-left: 15%;
+  width: 85%;
+  padding: 0;
 }
 
 button {
@@ -206,6 +222,7 @@ caption {
 }
 
 form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,10 +309,13 @@ embed {
 }
 
 figure{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 figure:has(img) img{
@@ -319,4 +339,94 @@ img{
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+
+dialog {
+  max-height: 7vh;
+  min-height: 7vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog p {
+  color: white;
+}
+
+p {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+pre {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+ruby {
+  background-color: #eef;
+  padding: 2px 5px;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+samp {
+  background-color: #f1f1f1;
+  padding: 5px;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 10px;
+}
+sub, sup {
+  font-size: 0.8em;
+  vertical-align: baseline;
+  position: relative;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+abbr {
+  border-bottom: 1px dotted #333;
+  cursor: help;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #f9f9f9;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+u {
+  text-decoration: underline;
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #663399;
+}
+
+a[href] {
+  cursor: pointer;
 }
